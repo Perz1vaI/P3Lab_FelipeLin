@@ -30,23 +30,23 @@ int main(int argc, char** argv) {
         switch (menu) {
             case 1:
             {
-                double x, resultado_1;
+                double valor_x, resultado_Ej1;
                 cout << "Ingrese la x: ";
-                cin >> x;
-                resultado_1 = 1 / (1 + exp(-x));
-                cout << "La respuesta de la funcion es: " << resultado_1 << "\n";
+                cin >> valor_x;
+                resultado_Ej1 = 1 / (1 + exp(-valor_x));
+                cout << "La respuesta de la funcion es: " << resultado_Ej1 << "\n";
                 break;
             }
             case 2:
             {
-                double s, resultado_2 = 0, calculo = 0;
-                cout << "Ingrese la s: ";
-                cin >> s;
-                for (int i = 0; i <= s; i++) {
-                    calculo = calculo + ((2 * i) - 1) * ((2 * i) + 1);
+                double repeticiones, resultado_Ej2=0, calculo=0;
+                cout << "Ingrese las repeticiones que desea hacer: ";
+                cin >> repeticiones;
+                for (int i = 0; i <= repeticiones; i++) {
+                    calculo += (pow(-1,i)) / ((2 * i) + 1);
                 }
-                resultado_2 = calculo;
-                cout << "La respuesta de la funcion es: " << resultado_2 << "\n";
+                resultado_Ej2 = calculo*4;
+                cout << "La respuesta de la funcion es: " << resultado_Ej2 << "\n";
                 break;
             }
             default:
